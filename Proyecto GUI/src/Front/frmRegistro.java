@@ -10,7 +10,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
-import javax.swing.border.Border;
 //Esta es el package para importar las librerias que yo mismo hice
 import Components.*;
 
@@ -24,7 +23,7 @@ public class frmRegistro extends JFrame {
 	JPanel pnlImagen = new JPanel();
 	JTextArea txtNombre = new JTextArea();
 	JTextArea txtUsuario = new JTextArea();
-	JTextArea txtContraseña = new JTextArea();
+	JTextArea txtContrasena = new JTextArea();
 	JTextArea txtCorreo = new JTextArea();
 	JTextArea txtUrl = new JTextArea(1, 20);
 	JButton btnRegistrar = new JButton("Registrar");
@@ -56,8 +55,8 @@ public class frmRegistro extends JFrame {
 		pnlRegistro.add(JTextBorderBottom.createBorderedTextArea(txtNombre));
 		pnlRegistro.add(JTextBorderBottom.createLabel("Usuario:"));
 		pnlRegistro.add(JTextBorderBottom.createBorderedTextArea(txtUsuario));
-		pnlRegistro.add(JTextBorderBottom.createLabel("Contraseña:"));
-		pnlRegistro.add(JTextBorderBottom.createBorderedTextArea(txtContraseña));
+		pnlRegistro.add(JTextBorderBottom.createLabel("Contraseï¿½a:"));
+		pnlRegistro.add(JTextBorderBottom.createBorderedTextArea(txtContrasena));
 		pnlRegistro.add(JTextBorderBottom.createLabel("Correo:"));
 		pnlRegistro.add(JTextBorderBottom.createBorderedTextArea(txtCorreo));
 		pnlRegistro.add(JTextBorderBottom.createLabel("URL:"));

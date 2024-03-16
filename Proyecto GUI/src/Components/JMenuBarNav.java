@@ -4,23 +4,39 @@ import javax.swing.*;
 
 public class JMenuBarNav extends JMenuBar {
 	public JMenuBarNav() {
-		// Crear el menú "File"
+		// Crear el menï¿½ "File"
 		JMenu fileMenu = new JMenu("File");
+		JMenu menuBanco = new JMenu("Banco");
+		JMenu menuServicio = new JMenu("Servicio");
 
-		// Crear los elementos de menú
+		// Crear los elementos de menï¿½
 		JMenuItem newItem = new JMenuItem("New");
 		JMenuItem openItem = new JMenuItem("Open");
 		JMenuItem saveItem = new JMenuItem("Save");
 		JMenuItem exitItem = new JMenuItem("Exit");
 
-		// Agregar los elementos de menú al menú "File"
+		JMenuItem itemAlta = new JMenuItem("Alta");
+		JMenuItem itemBaja = new JMenuItem("Baja");
+		JMenuItem itemActualizar = new JMenuItem("Actualizar");
+		JMenuItem itemConsultar = new JMenuItem("Consultar");
+
+		// Agregar los elementos de menï¿½ al menï¿½ "File"
 		fileMenu.add(newItem);
 		fileMenu.add(openItem);
 		fileMenu.add(saveItem);
-		fileMenu.addSeparator(); // Añade un separador entre elementos
+		fileMenu.addSeparator(); // Aï¿½ade un separador entre elementos
 		fileMenu.add(exitItem);
 
-		// Agregar el menú "File" a la barra de menú
+		// Agregar los elementos de menï¿½ al menï¿½ "File"
+		menuBanco.add(itemAlta);
+		menuBanco.add(itemActualizar);
+		menuBanco.add(itemBaja);
+
+		menuBanco.addSeparator(); // Aï¿½ade un separador entre elementos
+		menuBanco.add(itemConsultar);
+
+		// Agregar el menï¿½ "File" a la barra de menï¿½
 		this.add(fileMenu);
+		this.add(menuBanco);
 	}
 }
